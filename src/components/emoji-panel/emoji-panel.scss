@@ -1,0 +1,40 @@
+.emojis {
+  &[aria-hidden='true'] {
+    animation: slideOutDown 0.7s;
+  }
+  &[aria-hidden='false'] {
+    animation: slideInUp 0.7s;
+  }
+
+  .emoji-list {
+    display: flex;
+
+    .emoji {
+      margin: 0 5px;
+      cursor: pointer;
+      font-size: 25px;
+    }
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideOutDown {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, 100%, 0);
+  }
+}

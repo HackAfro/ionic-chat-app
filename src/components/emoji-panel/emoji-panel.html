@@ -1,0 +1,17 @@
+<div class="emojis" [hidden]="!showEmojis" [attr.aria-hidden]="!showEmojis">
+  <div class="emoji-list positive" *ngIf="result.tone === 'positive'">
+    <span class="emoji" *ngFor="let emoji of emojiList.positive; let i = index;" (click)="onClick('positive', i)">
+      {{codePoint(emoji)}}
+    </span>
+  </div>
+  <div class="emoji-list neutral" *ngIf="result.tone === 'neutral'">
+    <span class="emoji" *ngFor="let emoji of emojiList.neutral; let j = index;" (click)="onClick('neutral', j)">
+      {{codePoint(emoji)}}
+    </span>
+  </div>
+  <div class="emoji-list negative" *ngIf="result.tone === 'negative'">
+    <span class="emoji" *ngFor="let emoji of emojiList.negative; let k = index;" (click)="onClick('negative', k)">
+      {{codePoint(emoji)}}
+    </span>
+  </div>
+</div>

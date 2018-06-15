@@ -1,6 +1,6 @@
-# Gatsby-Blog
+# Ionic Chat Application
 
-Realtime comments on gatsby blogs using Pusher
+Emoji suggestions using sentiment analysis
 
 ## Prerequisites
 

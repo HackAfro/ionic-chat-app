@@ -4,7 +4,7 @@ import Pusher from 'pusher-js';
 @Injectable()
 export class PusherProvider {
   constructor() {
-    var pusher = new Pusher('3dddad24c242ae9a36ca', {
+    var pusher = new Pusher('PUSHER_KEY', {
       cluster: 'eu',
       encrypted: true,
     });

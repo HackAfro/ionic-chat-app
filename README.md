@@ -2,6 +2,8 @@
 
 Emoji suggestions using sentiment analysis
 
+You can find the article [here](https://pusher.com/tutorials/chat-app-ionic-sentiment)
+
 ## Prerequisites
 
 - [Ionic](https://ionicframework.com/getting-started)
